@@ -15,7 +15,11 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.decorated-zone {
+
 }
 
 .icon__rec::before {
@@ -51,13 +55,45 @@
   block-size: 9px;
 }
 
-
-
 .header__theme-menu {
   grid-row: 1;
   grid-column: auto;
-  justify-self: end;
-  
+  justify-self: end;  
+  margin-top: 75px;
+  margin-right: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--menu_list);
+  text-transform: lowercase;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent_color);
+}
+
+.big-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--no_focus_text_color);
+}
+
+.shadow-decor {
+  text-shadow: 4px 4px 0 var(--shadow_color);
 }
 
 

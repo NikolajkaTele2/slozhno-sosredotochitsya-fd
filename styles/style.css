@@ -14,7 +14,10 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
+  height: 100vh;
+  padding: 10px;
+  min-block-size: 668px;
+  align-items: start;
   grid-template-rows: 1fr max-content 1fr;
 }
 
@@ -39,7 +42,7 @@
   border-inline-start: 1px solid var(--frame_color);
   border-block-end: 1px solid var(--frame_color);
   inset-inline-start: 10px;
-  inset-block-end: 0px;
+  inset-block-end: 10px;
   content: "";
   position: absolute;
   inline-size: 25px;
@@ -55,10 +58,9 @@
   display: var(--display_rec);
   align-items: center;
   gap: 10px;
-  inset-inline-end: 20px;
+  inset-inline-end: 19px;
   inset-block-start: 10px;
   color: var(--accent_color);
-  
 }
 
 .icon__rec::after {
@@ -93,10 +95,12 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 18px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .header__theme-menu-button_active {
-  outline: 0.5px solid var(--accent_color);
+  outline: 1px solid var(--accent_color);
 }
 
 .header__theme-menu-button:hover {

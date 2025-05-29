@@ -15,23 +15,39 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: 1fr max-content 1fr;
 }
 
 .decorated-zone {
-
-}
-
-.icon__rec::before {
-  content: '';
+  position: relative;
+ }
+ 
+.decorated-zone::before {
+  content: "";
+  border-inline-end: 1px solid var(--frame_color);
+  border-block-start: 1px solid var(--frame_color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
   position: absolute;
-  top: 0;
-  left: 33px;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent_color);
-  border-right: 1px solid var(--accent_color);
+  inline-size: 25px;
+  block-size: 25px;
+  align-self: flex-start;
+  justify-self: end;
 }
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--frame_color);
+  border-block-end: 1px solid var(--frame_color);
+  inset-inline-start: 10px;
+  inset-block-end: 0px;
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  align-self: flex-end;
+  justify-self: start;
+}
+
 
 .icon__rec {
   position: absolute;
@@ -59,14 +75,14 @@
   grid-row: 1;
   grid-column: auto;
   justify-self: end;  
-  margin-top: 75px;
-  margin-right: 10px;
+  padding-top: 75px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-right: 10px;
 }
 
 .header__theme-menu-button {
@@ -80,7 +96,16 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent_color);
+  outline: 0.5px solid var(--accent_color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover_button);
+}
+
+.header__theme-menu-button_active, .header__theme-menu-button_active:hover {
+  outline: 1px solid var(--menu_list);
+  pointer-events: none;
 }
 
 .big-title {
@@ -95,6 +120,22 @@
 .shadow-decor {
   text-shadow: 4px 4px 0 var(--shadow_color);
 }
+
+.title-decor {
+  background: var(--accent_color);
+}
+
+.header_subtitle {
+  line-height: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  color: var(--subtitle_text_color);
+  align-self: center;
+  justify-self: end;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 
 
 

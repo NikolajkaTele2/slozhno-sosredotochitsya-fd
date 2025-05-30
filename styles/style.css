@@ -77,14 +77,13 @@
   grid-row: 1;
   grid-column: auto;
   justify-self: end;  
-  padding-top: 75px;
+  padding-top: 65px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-right: 10px;
 }
 
 .header__theme-menu-button {
@@ -116,8 +115,6 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
-  padding-left: 10px;
-  padding-right: 10px;
   color: var(--no_focus_text_color);
 }
 
@@ -136,8 +133,6 @@
   color: var(--subtitle_text_color);
   align-self: center;
   justify-self: end;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 

@@ -1,6 +1,5 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
- 
   background-image: var(--background_image);
   background-color: var(--background_color);
   background-position: center;
@@ -61,6 +60,7 @@
   inset-inline-end: 19px;
   inset-block-start: 10px;
   color: var(--accent_color);
+  text-transform: uppercase;
 }
 
 .icon__rec::after {

@@ -4,12 +4,7 @@
   переключая тему
 */
 
-.root.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-
+:root.theme-light {
   --background_image: url("../images/cover-image-light.png");
   --menu_list: var(--grey);
   --menu_list_decor: var(--pink);
@@ -28,7 +23,7 @@
 }
 
 @media (width >=1024px) {
-  .page.theme_light {
+  :root.theme-light {
     --shadow_color: var(--pink);
   }
 }
@@ -53,7 +48,6 @@
     --shadow_color: var(--purple_pink);
   }
 }
-
 
 @media (prefers-color-scheme: light) and (width >=1024px) {
   :root {

@@ -206,5 +206,30 @@ margin-block-end: 10px;
   text-shadow: 3px 1px 0 var(--accent_color);
 }
 
+.image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.list-img {
+  gap: 10px;
+}
+
+.footer {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: center;
+  padding: 10px;
+  min-block-size: 668px;
+  height: 100vh;
+}
+
+.shadow-decor-footer {
+  text-shadow: 2px 2px 0 var(--shadow_color);
+}
+
 
 

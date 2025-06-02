@@ -160,11 +160,11 @@
 }
 
 .section-title {
-color: var(--menu_list);
-font-weight: 700;
-font-size: inherit;
-line-height: inherit;
-margin-block-end: 10px;
+  color: var(--menu_list);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  margin-block-end: 10px;
 }
 
 .section-list-item-header {
@@ -232,4 +232,6 @@ margin-block-end: 10px;
 }
 
 
-
+@media(width >=768px) {
+    
+}

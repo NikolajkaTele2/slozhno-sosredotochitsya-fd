@@ -5,7 +5,7 @@
 
 :root {
   --background_image: url("../images/cover-image-dark.png");
-  --background_color: #000028;
+  --background_color: var(--black);
   --black: #000028;
   --main_text_color: var(--amaranth);
   --focus_text_color: var(--violet);

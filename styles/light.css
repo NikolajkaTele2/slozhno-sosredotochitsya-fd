@@ -22,11 +22,11 @@
   --shadow_color: var(--purple_pink);
 }
 
-/* @media (width >=1024px) {
-  :root.theme-light {
+@media (width >=1024px) {
+  .page.theme_light {
     --shadow_color: var(--pink);
   }
-} */
+}
 
 
 @media (prefers-color-scheme: light) {
@@ -49,8 +49,9 @@
   }
 }
 
-/* @media (prefers-color-scheme: light) and (width >=1024px) {
+
+@media (prefers-color-scheme: light) and (width >=1024px) {
   :root {
     --shadow_color: var(--pink);
   }
-} */
+}

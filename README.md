@@ -1,1 +1,1 @@
-https://github.com/NikolajkaTele2/slozhno-sosredotochitsya-fd.git
+https://github.com/NikolajkaTele2/slozhno-sosredotochitsya-fd

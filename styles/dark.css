@@ -28,7 +28,7 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background_image: url("../images/cover-image-dark.png");
     --background_color: var(--black);
@@ -47,4 +47,4 @@
     --hover_button: rgba(255, 0, 112, 0.4);
     --focus_link: var(--pink);
   }
-}
+} */

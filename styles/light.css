@@ -23,7 +23,7 @@
 }
 
 @media (width >=1024px) {
-  .page.theme_light {
+  .root.theme-light {
     --shadow_color: var(--pink);
   }
 }
@@ -51,7 +51,7 @@
 
 
 @media (prefers-color-scheme: light) and (width >=1024px) {
-  :root {
+  :root.theme-light {
     --shadow_color: var(--pink);
   }
 }

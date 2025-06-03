@@ -1,6 +1,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: var(--background_image);
+  /* background-image: var(--background_image); */
   background-color: var(--background_color);
   background-position: center;
   background-size: cover;
@@ -32,6 +32,10 @@
   inline-size: 25px;
   block-size: 25px;
 }
+
+.decorated-zone {
+  position: relative;
+ }
 
 .decorated-zone::after {
   border-inline-start: 1px solid var(--frame_color);
@@ -81,7 +85,6 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: none;
   border: 1px solid transparent;
   color: var(--menu_list);
   text-transform: lowercase;

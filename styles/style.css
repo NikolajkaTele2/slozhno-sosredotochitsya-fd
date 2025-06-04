@@ -79,7 +79,8 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: 1px solid transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
   color: var(--menu_list);
   text-transform: lowercase;
   cursor: pointer;
@@ -284,6 +285,9 @@
     grid-template-columns: 32.5% 65%;
     gap: 19px;
   }
+   .why {
+    grid-template-rows: min-content min-content;
+   }
 
   .section-title {
     max-inline-size: 30.7vw;
@@ -333,8 +337,6 @@
   }
 
   .footer-title {
-    /* align-self: end; */
-    /* justify-self: start; */
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

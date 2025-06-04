@@ -6,6 +6,7 @@
 
 :root.theme-light {
   --background_image: url("../images/cover-image-light.png");
+  --background_color: #fff1f7;
   --menu_list: var(--grey);
   --menu_list_decor: var(--pink);
   --main_text_color: var(--grey);
@@ -22,16 +23,11 @@
   --shadow_color: var(--purple_pink);
 }
 
-@media (width >=1024px) {
-  .root.theme-light {
-    --shadow_color: var(--pink);
-  }
-}
-
 
 @media (prefers-color-scheme: light) {
   :root {
     --background_image: url("../images/cover-image-light.png");
+    --background_color: #fff1f7;
     --menu_list: var(--grey);
     --menu_list_decor: var(--pink);
     --main_text_color: var(--grey);
@@ -49,9 +45,3 @@
   }
 }
 
-
-@media (prefers-color-scheme: light) and (width >=1024px) {
-  :root.theme-light {
-    --shadow_color: var(--pink);
-  }
-}

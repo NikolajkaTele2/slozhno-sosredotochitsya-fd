@@ -21,6 +21,8 @@
   --hover_button: rgba(50, 49, 45, 0.4);
   --focus_link: var(--grey);
   --shadow_color: var(--purple_pink);
+  --no_focus_text_color: var(--cotton);
+  --shadow_color: var(--purple_pink);
 }
 
 
@@ -41,6 +43,7 @@
     --hover_link: var(--grey);
     --hover_button: rgba(50, 49, 45, 0.4);
     --focus_link: var(--grey);
+    --no_focus_text_color: var(--cotton);
     --shadow_color: var(--purple_pink);
   }
 }

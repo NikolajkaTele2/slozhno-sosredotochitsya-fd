@@ -25,6 +25,8 @@
   --hover_button: var(--gray);
   --hover_button: rgba(255, 0, 112, 0.4);
   --focus_link: var(--pink);
+  --no_focus_text_color: var(--violet);
+  --shadow_color: var(--pink);
 }
 
 

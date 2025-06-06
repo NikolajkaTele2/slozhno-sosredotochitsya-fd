@@ -104,7 +104,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--hover_button);
+  border-bottom: 1px solid var(--focus_button);
   outline: none;
 }
 
